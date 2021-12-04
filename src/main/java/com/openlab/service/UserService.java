@@ -11,4 +11,5 @@ public interface UserService {
     public void addUsers(Users users);
     public void updateUsers(Long id,Users users);
     public void deleteUsersById(Long id);
+    public void pay(String out_trand_id);
 }

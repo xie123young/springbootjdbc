@@ -51,4 +51,9 @@ public class UsersServiceImpl implements UserService {
         //jdbcTemplate.update("delete from users where id=?",id);
         userDao.deleteUsersById(id);
     }
+
+    @Override
+    public void pay(String out_trand_id) {
+        System.out.println("支付");
+    }
 }
