@@ -44,6 +44,7 @@ public class UsersController {
     @DeleteMapping("/{id}")
     public String deleteByUserId(@PathVariable("id") Long id){
         userService.deleteUsersById(id);
+        system.out.println("nihao--Github");
         return "success";
     }
 }
